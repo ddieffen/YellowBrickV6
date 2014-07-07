@@ -5,9 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YellowbrickV6", "Yellowbric
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YellowbrickV6Cmd", "YellowbrickV6Cmd\YellowbrickV6Cmd.csproj", "{49365549-A028-4828-8610-C468C2A26DBB}"
 EndProject
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YellowbrickV6", "YellowbrickV6\YellowbrickV6.csproj", "{651E9F05-1674-427D-852A-5C14EDFEA438}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
