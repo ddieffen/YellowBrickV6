@@ -276,8 +276,10 @@ namespace YellowbrickV6
 
             //dynamic race = JsonConvert.DeserializeObject(jsonRace);
             //string title = raceKey.title;
-            
-            Race race = JsonConvert.DeserializeObject<Race>(jsonRace);
+            JsonSerializerSettings settings = new JsonSerializerSettings();
+            settings.CheckAdditionalContent = false;
+            settings.NullValueHandling = NullValueHandling.Ignore;
+            Race race = JsonConvert.DeserializeObject<Race>(jsonRace, settings);
             return race;
         }
 
@@ -399,14 +401,14 @@ namespace YellowbrickV6
         /// <param name="race">Race containing the necessary data</param>
         /// <param name="teamsIDs">Teams selected for the report</param>
         /// <returns>Report for the selected teams</returns>
-        public static string ReportSelectedTeamsHTML(Race race, List<int> teamsIDs, int referenceTeam = -1)
+        public static string ReportSelectedTeamsHTML(Race race, int section, int referenceTeam = -1)
         {
             string report = "";
 
             Dictionary<int, Moment> latestMoments = new Dictionary<int, Moment>();
             foreach (Team team in race.teams)
             {
-                if (teamsIDs == null || teamsIDs.Count == 0 || teamsIDs.Contains(team.id))
+                if (team.tags.Contains(section))
                 {
                     Moment latest = new Moment();
                     latest.dtf = (int)(race.course.distance * 1000);
@@ -461,7 +463,15 @@ namespace YellowbrickV6
                     position++;
                 }
             }
-            report += "</table>";
+            report += "</table><br><br>";
+
+            foreach (KeyValuePair<int, Moment> teamPair in latestMoments.OrderBy(p => p.Value.dtf))
+            {
+                Team team = race.teams.Single(t => t.id == teamPair.Key);
+                if (team.status != "RACING")
+                    report += team.name + " - " + team.status + "<br>";
+            }
+
             return report;
         }
     }
