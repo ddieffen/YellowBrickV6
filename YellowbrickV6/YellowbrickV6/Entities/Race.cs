@@ -54,6 +54,11 @@ namespace YellowbrickV6.Entities
     [Serializable]
     public class Team
     {
+        public Team()
+        {
+            this.moments = new List<Moment>();
+        }
+
         public List<int> tags { get; set; }
         public string model { get; set; }
         public string status { get; set; }

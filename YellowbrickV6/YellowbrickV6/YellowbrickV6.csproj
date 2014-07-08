@@ -55,7 +55,6 @@
     <Compile Include="Entities\Moment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\CoordinateTools.cs" />
-    <Compile Include="Tools\EmailTools.cs" />
     <Compile Include="Tools\StringTools.cs" />
     <Compile Include="Tools\TimeTools.cs" />
     <Compile Include="Tools\UnitTools.cs" />
