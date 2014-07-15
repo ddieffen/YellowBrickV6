@@ -40,6 +40,11 @@ namespace YellowbrickV6.Entities
         public string handicap { get; set; }
         public int show { get; set; }
         public bool lb { get; set; }
+
+        public override string ToString()
+        {
+            return name;
+        }
     }
 
     [Serializable]
@@ -78,6 +83,11 @@ namespace YellowbrickV6.Entities
         public string sail { get; set; }
         public string explain { get; set; }
         public List<Moment> moments { get; set; }
+
+        public override string ToString()
+        {
+            return name;
+        }
     }
 
     [Serializable]

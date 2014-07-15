@@ -5,14 +5,14 @@ using System.Text;
 
 namespace YellowbrickV6
 {
-    internal static class UnitTools
+    public static class UnitTools
     {
-        internal static double Nm2M(double nm)
+        public static double Nm2M(double nm)
         {
             return nm * 1852;
         }
 
-        internal static double M2Nm(double m)
+        public static double M2Nm(double m)
         {
             return m / 1852;
         }

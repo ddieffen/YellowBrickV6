@@ -386,7 +386,7 @@ namespace YellowbrickV6
                         + CoordinateTools.HaversineDistanceNauticalMiles(reference.lat, reference.lon, moment.lat, moment.lon).ToString("0000.0") + "nm\t"
                         + moment.lat.ToString("000.000000") + "\t"
                         + moment.lon.ToString("000.000000") + "\t"
-                        + TimeTools.UnixTimeStampToDateTime(moment.at)
+                        + TimeTools.UnixTimeStampToDateTime(moment.at).ToString("u")
                         + "\r\n";
                     position++;
                 }
@@ -458,7 +458,7 @@ namespace YellowbrickV6
                         + "<td>" + CoordinateTools.HaversineDistanceNauticalMiles(reference.lat, reference.lon, moment.lat, moment.lon).ToString("0.0") + "nm</td>"
                         + "<td>" + moment.lat.ToString("0.000000") + "</td>"
                         + "<td>" + moment.lon.ToString("0.000000") + "</td>"
-                        + "<td>" + TimeTools.UnixTimeStampToDateTime(moment.at) + "</td>"
+                        + "<td>" + TimeTools.UnixTimeStampToDateTime(moment.at).ToString("u") + "</td>"
                         + "</tr>";
                     position++;
                 }

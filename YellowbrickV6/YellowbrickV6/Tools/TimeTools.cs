@@ -15,7 +15,7 @@ namespace YellowbrickV6
         public static DateTime UnixTimeStampToDateTime(double unixTimeStamp)
         {
             System.DateTime dtDateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0);
-            dtDateTime = dtDateTime.AddSeconds(unixTimeStamp).ToLocalTime();
+            dtDateTime = dtDateTime.AddSeconds(unixTimeStamp);
             return dtDateTime;
         }
 
@@ -26,7 +26,7 @@ namespace YellowbrickV6
         /// <returns></returns>
         public static double DateTimeToUnixTime(DateTime time)
         {
-            return (DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds;
+            return (time - new DateTime(1970, 1, 1)).TotalSeconds;
         }
 
     }
