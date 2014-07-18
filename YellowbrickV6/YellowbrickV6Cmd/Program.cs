@@ -14,8 +14,8 @@ namespace YellowbrickV6
 {
     class Program
     {
-        static string serverName = "http://yb.tl";
-        static string raceKey = "shtp2014";
+        static string serverName = "http://us.yb.tl";
+        static string raceKey = "chicagomack2014";
 
         static DateTime lastUpdate = new DateTime(1970,1,1);
 

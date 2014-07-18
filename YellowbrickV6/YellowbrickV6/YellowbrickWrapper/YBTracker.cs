@@ -408,16 +408,19 @@ namespace YellowbrickV6
             Dictionary<int, Moment> latestMoments = new Dictionary<int, Moment>();
             foreach (Team team in race.teams)
             {
-                if (team.tags.Contains(section))
+                if (team.tags != null)
                 {
-                    Moment latest = new Moment();
-                    latest.dtf = (int)(race.course.distance * 1000);
-                    foreach (Moment moment in team.moments)
+                    if (team.tags.Contains(section))
                     {
-                        if (moment.at > latest.at)
-                            latest = moment;
+                        Moment latest = new Moment();
+                        latest.dtf = (int)(race.course.distance * 1000);
+                        foreach (Moment moment in team.moments)
+                        {
+                            if (moment.at > latest.at)
+                                latest = moment;
+                        }
+                        latestMoments.Add(team.id, latest);
                     }
-                    latestMoments.Add(team.id, latest);
                 }
             }
 

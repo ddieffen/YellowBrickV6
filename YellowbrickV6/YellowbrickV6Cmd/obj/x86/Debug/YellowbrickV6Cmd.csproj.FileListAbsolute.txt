@@ -9,3 +9,14 @@ C:\Users\User\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\bin\
 C:\Users\User\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\obj\x86\Debug\YellowbrickV6Cmd.exe
 C:\Users\User\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\obj\x86\Debug\YellowbrickV6Cmd.pdb
 C:\Users\User\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\bin\Debug\YellowbrickV6Cmd.exe.config
+C:\Users\ddieffenthaler\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\bin\Debug\YellowbrickV6Cmd.exe.config
+C:\Users\ddieffenthaler\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\obj\x86\Debug\YellowbrickV6Cmd.exe
+C:\Users\ddieffenthaler\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\obj\x86\Debug\YellowbrickV6Cmd.pdb
+C:\Users\ddieffenthaler\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\bin\Debug\YellowbrickV6Cmd.exe
+C:\Users\ddieffenthaler\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\bin\Debug\YellowbrickV6Cmd.pdb
+C:\Users\ddieffenthaler\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\bin\Debug\YellowbrickV6.dll
+C:\Users\ddieffenthaler\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ddieffenthaler\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\bin\Debug\YellowbrickV6.pdb
+C:\Users\ddieffenthaler\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\ddieffenthaler\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ddieffenthaler\Documents\GitHub\YellowBrickV6\YellowbrickV6\YellowbrickV6Cmd\obj\x86\Debug\YellowbrickV6Cmd.csprojResolveAssemblyReference.cache
